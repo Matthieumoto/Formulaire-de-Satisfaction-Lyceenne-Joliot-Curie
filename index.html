@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Satisfaction Lycéenne - Joliot Curie</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Formulaire de Satisfaction Lyceenne</h1>
+    </div>
+    <span id="url">https://docs.google.com/forms/d/e/1FAIpQLScEkseftTVlerGKi708VCM6Bl5ExUJb8_od0pGsfJXuNxHTdw/viewform</span>
+
+    <div id="qrcode"></div>    
+
+    <script>
+        // Récupérez le lien du span
+        var urlSpan = document.getElementById("url");
+        var url = urlSpan.textContent;
+
+        // Générez le QR code avec le lien existant
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: url,
+            width: 300,
+            height: 300,
+        });
+    </script>
+
+    <div>
+        <h1>Scanne moi</h1>
+    </div>
+</body>
+</html>

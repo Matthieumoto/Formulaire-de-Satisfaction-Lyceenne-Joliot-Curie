@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Grafton';
+    src: url('font/zt-grafton-regular.ttf') format('truetype');
+}
+
+#qrcode {
+    margin-left: 15%;
+}
+
+#url {
+    display: none; /* Le lien est caché par défaut */
+}
+
+body {
+    font-family: 'Grafton';
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+}
